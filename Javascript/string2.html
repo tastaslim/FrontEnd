@@ -1,0 +1,13 @@
+<script type="text/javascript">
+	let str = prompt('Enter the string:');
+	let arr = str.split(' ');
+	let i = 0,
+		j = arr.length;
+	while (i < j) {
+		[arr[i], arr[j]] = [arr[j], arr[i]];
+		i += 1;
+		j -= 1;
+	}
+	let ans = arr.join(' ');
+	document.write(ans);
+</script>

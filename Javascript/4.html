@@ -1,0 +1,35 @@
+<script type="text/javascript">
+	// let a = 0;
+	// while (a < 10) {
+	// 	document.write(a, ' ');
+	// 	a += 1;
+	// }
+	// let ans = '';
+	// arr = ['Taslim', 'Arif', 'good', 'boy'];
+	// for (let i in arr) {
+	// 	ans = ans + arr[i] + ' ';
+	// }
+	// document.write('<br>'); // when we are rendering html otherwise document.write('\n');
+	// document.write(ans, '<br>');
+	// arr.sort();
+	// document.write(arr);
+	// arr.pop();
+	// document.write('<br>', arr);
+	// document.push('sortware engineer');
+
+	let list = [1, 2, 3, 4, 4, 6, 12];
+	let product = 15;
+	let count = 0;
+	let i = 0;
+	let j = list.length - 1;
+	while (i < j) {
+		if (list[i] * list[j] <= product) {
+			let k = j - i;
+			count += k;
+			i += 1;
+		} else {
+			j -= 1;
+		}
+	}
+	document.write('<br>', count);
+</script>

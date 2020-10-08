@@ -1,0 +1,29 @@
+<script type="text/javascript">
+	// let name = prompt('Enter your name:');
+	// if (name != '') {
+	// 	document.write('Nice to meet you ', name);
+	// }
+
+	function sum(a, b) {
+		return a + b;
+	}
+	function minus(a, b) {
+		return a - b;
+	}
+	function product(a, b) {
+		return a * b;
+	}
+	function divide(a, b) {
+		return a / b;
+	}
+
+	let a = parseInt(prompt('Enter first number:'));
+	let b = parseInt(prompt('Enter second number:'));
+
+	let ans1 = sum(a, b),
+		ans2 = minus(a, b),
+		ans3 = product(a, b),
+		ans4 = divide(a, b);
+
+	document.write(ans1, ' ', ans2, ' ', ans3, ' ', ans4);
+</script>

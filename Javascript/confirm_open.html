@@ -1,0 +1,16 @@
+<body>
+	<script type="text/javascript">
+		function runFun() {
+			let m = confirm('Do you want to leave this page and visit W3School');
+			if (m == true) {
+				open('https://www.w3schools.com/JSREF/jsref_obj_array.asp');
+				return true;
+			} else {
+				document.write("User doesn't want to visit W3School");
+				return false;
+			}
+		}
+	</script>
+
+	<button type="submit" onclick="runFun()">clickMe</button>
+</body>

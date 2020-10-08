@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	let str = 'My name is Taslim Arif';
+	// document.write(str.length, str.charAt(5));
+	// document.write(str.substring(0, 5));
+	// document.write(str.bold()); // Bolds the string
+	// document.write(str.fontcolor('red'));
+	// document.write(str.replaceAll('i', 'I'));
+	// document.write(str.toLocaleLowerCase());
+	// document.write(str.toLocaleUpperCase());
+	let i = 0,
+		j = str.length - 1;
+	while (i < j) {
+		[str[i], str[j]] = [str[j], str[i]];
+		i += 1;
+		j -= 1;
+	}
+
+	document.write(str);
+</script>

@@ -1,0 +1,34 @@
+//By default, any variable of function which is not inside anything(class,
+function, obj ...), // they are in global execution context // But as soon as
+the function or class or etc. started executing their code, they get their
+exection context // and now anything written inside that function or class or
+etc. executes in the corresponding execution context // of that function, class
+or etc. // Execution stack also known as calling stack, is a LIFO type which is
+used to store all the execution contexts when code of a given .js file executes.
+<script>
+	let myvar = 'Global execution context';
+	let add = (a, b) => {
+		debugger;
+		let m = 23;
+		console.log(`varibale m:{m} is in add function execution context`);
+		return a + b;
+	};
+
+	let diff = (a, b) => {
+		debugger;
+		let n = 12;
+		console.log(`varibale n:{n} is in diff function execution context`);
+		console.log(add(a, b));
+		return a - b;
+	};
+
+	let c = () => {
+		debugger;
+		let z = 27;
+		console.log(`variable z:{z} is in c function execution context`);
+		console.log('Function c');
+		console.log(diff(4, 5));
+	};
+	debugger;
+	c();
+</script>
