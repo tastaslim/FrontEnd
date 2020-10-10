@@ -71,7 +71,3 @@ let AgeName = (rollnopassed) => {
 		);
 	});
 };
-RollNumber.then((roll_no) => {
-	console.log(roll_no);
-	AgeName(roll_no[2]).then(() => {});
-});
